@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Haircut</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #222;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    section {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: #0f172a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1e293b;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Book a Haircut</h1>
+  <p>Clean cuts • Fair prices • Book easy</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I’m a young barber who takes pride in clean fades, sharp lineups, and making sure every client leaves confident.
+    I focus on quality, not rushing, and I treat every cut like it matters — because it does.
+  </p>
+</section>
+
+<section>
+  <h2>Book Your Appointment</h2>
+  <form>
+    <label>Full Name</label>
+    <input type="text" placeholder="Your name" required />
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="(555) 123-4567" required />
+
+    <label>Haircut Type</label>
+    <select required>
+      <option value="">Select a service</option>
+      <option>Fade</option>
+      <option>Taper</option>
+      <option>Buzz Cut</option>
+      <option>Lineup</option>
+      <option>Other</option>
+    </select>
+
+    <label>Preferred Date</label>
+    <input type="date" required />
+
+    <label>Preferred Time</label>
+    <input type="time" required />
+
+    <label>Notes (optional)</label>
+    <textarea rows="3" placeholder="Anything I should know?"></textarea>
+
+    <button type="submit">Request Appointment</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 • Personal Haircut Booking
+</footer>
+
+</body>
+</html>
